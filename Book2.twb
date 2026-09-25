@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='074e974a30efd76ee2475f337ef50c9eb3f53e547413c950cb477b0fe10ef2a4' _.fcp.WorkbookFingerprinting.true...creator-author-id='074e974a30efd76ee2475f337ef50c9eb3f53e547413c950cb477b0fe10ef2a4' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='f1972a1f3fbe7a9a27548f667e3316c98c32cebe758e34390bd60704537660f6' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='f1972a1f3fbe7a9a27548f667e3316c98c32cebe758e34390bd60704537660f6' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Blender_sales_data)' inline='true' name='federated.1shy7dy0jhend814l2k7907c63ad' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Blender_sales_data' name='excel-direct.0r55bj613u3f501exy1s91e7qcna'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ATHARVA/Downloads/Blender_sales_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Blender_profit data' name='textscan.0mnpfsd0mol775102m7k411ppmse'>
+            <connection class='textscan' directory='C:/Users/ATHARVA/Downloads' filename='Blender_profit data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0r55bj613u3f501exy1s91e7qcna' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='6'>
+            <column datatype='string' name='Year' ordinal='0' />
+            <column datatype='integer' name='Sales' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B6:no:A1:B6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Blender_sales_data' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Blender_sales_data' id='Sheet1_7E5FF5BDF5444CFDB37AF033961C065A'>
+            <properties context=''>
+              <relation connection='excel-direct.0r55bj613u3f501exy1s91e7qcna' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Sales' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Blender_profit data' inline='true' name='federated.1xdtc7d1x76lbj11w3gln16cuuk0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Blender_profit data' name='textscan.1im4fw402l6p2d12o2d2k0kr8m3u'>
+            <connection class='textscan' directory='C:/Users/ATHARVA/Downloads' filename='Blender_profit data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1im4fw402l6p2d12o2d2k0kr8m3u' name='Blender_profit data.csv' table='[Blender_profit data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Year' ordinal='0' />
+            <column datatype='integer' name='Profit' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Blender_profit data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Blender_profit data.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Blender_profit data.csv_D7D8AB5C494648188FE857B585D1AE7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Blender_profit data.csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Blender_profit data.csv_D7D8AB5C494648188FE857B585D1AE7A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Blender_profit data.csv' datatype='table' name='[__tableau_internal_object_id__].[Blender_profit data.csv_D7D8AB5C494648188FE857B585D1AE7A]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Blender_profit data.csv' id='Blender_profit data.csv_D7D8AB5C494648188FE857B585D1AE7A'>
+            <properties context=''>
+              <relation connection='textscan.1im4fw402l6p2d12o2d2k0kr8m3u' name='Blender_profit data.csv' table='[Blender_profit data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Profit' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blender_sales_data)' name='federated.1shy7dy0jhend814l2k7907c63ad' />
+            <datasource caption='Blender_profit data' name='federated.1xdtc7d1x76lbj11w3gln16cuuk0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1shy7dy0jhend814l2k7907c63ad'>
+            <column datatype='integer' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1xdtc7d1x76lbj11w3gln16cuuk0'>
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1shy7dy0jhend814l2k7907c63ad].[sum:Sales:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1xdtc7d1x76lbj11w3gln16cuuk0].[sum:Profit:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1shy7dy0jhend814l2k7907c63ad].[sum:Sales:qk] + [federated.1xdtc7d1x76lbj11w3gln16cuuk0].[sum:Profit:qk])</rows>
+        <cols>[federated.1shy7dy0jhend814l2k7907c63ad].[none:Year:nk]</cols>
+      </table>
+      <simple-id uuid='{0279A987-F995-4A2D-AFCE-3194E5A581EC}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1shy7dy0jhend814l2k7907c63ad].[none:Year:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D2609BC0-E9DD-49B1-AE85-BF61D6BD17D8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      /T8tRb6J4+uxYwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
