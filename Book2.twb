@@ -6,9 +6,11 @@
     <AnimationOnByDefault />
     <MarkAnimation />
     <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
     <ObjectModelTableType />
     <SchemaViewerObjectModel />
     <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
     <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
   </document-format-change-manifest>
@@ -17,91 +19,6 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='Sheet1 (Blender_sales_data)' inline='true' name='federated.1shy7dy0jhend814l2k7907c63ad' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Blender_sales_data' name='excel-direct.0r55bj613u3f501exy1s91e7qcna'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ATHARVA/Downloads/Blender_sales_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-          <named-connection caption='Blender_profit data' name='textscan.0mnpfsd0mol775102m7k411ppmse'>
-            <connection class='textscan' directory='C:/Users/ATHARVA/Downloads' filename='Blender_profit data.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <relation connection='excel-direct.0r55bj613u3f501exy1s91e7qcna' name='Sheet1' table='[Sheet1$]' type='table'>
-          <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='6'>
-            <column datatype='string' name='Year' ordinal='0' />
-            <column datatype='integer' name='Sales' ordinal='1' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:B6:no:A1:B6:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RIN_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Sales</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Sales]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Sales</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <object-id>[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]</object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Blender_sales_data' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]' role='measure' type='quantitative' />
-      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
-      </semantic-values>
-      <object-graph>
-        <objects>
-          <object caption='Blender_sales_data' id='Sheet1_7E5FF5BDF5444CFDB37AF033961C065A'>
-            <properties context=''>
-              <relation connection='excel-direct.0r55bj613u3f501exy1s91e7qcna' name='Sheet1' table='[Sheet1$]' type='table'>
-                <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='6'>
-                  <column datatype='string' name='Year' ordinal='0' />
-                  <column datatype='integer' name='Sales' ordinal='1' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </object-graph>
-    </datasource>
     <datasource caption='Blender_profit data' inline='true' name='federated.1xdtc7d1x76lbj11w3gln16cuuk0' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -178,6 +95,133 @@
                   <column datatype='integer' name='Profit' ordinal='1' />
                 </columns>
               </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (Blender_sales_data)' inline='true' name='federated.1shy7dy0jhend814l2k7907c63ad' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Blender_sales_data' name='excel-direct.0r55bj613u3f501exy1s91e7qcna'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ATHARVA/Downloads/Blender_sales_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Blender_profit data' name='textscan.0mnpfsd0mol775102m7k411ppmse'>
+            <connection class='textscan' directory='C:/Users/ATHARVA/Downloads' filename='Blender_profit data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0r55bj613u3f501exy1s91e7qcna' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='6'>
+            <column datatype='string' name='Year' ordinal='0' />
+            <column datatype='integer' name='Sales' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B6:no:A1:B6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Blender_sales_data' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/ATHARVA/Tableau_Prac/Book2ExtractFile.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/30/2026 02:32:49 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Sheet1 (Blender_sales_data)' increment-value='%null%' refresh-type='create' rows-inserted='5' timestamp-start='2026-09-30 14:32:49.275' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7E5FF5BDF5444CFDB37AF033961C065A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Blender_sales_data' id='Sheet1_7E5FF5BDF5444CFDB37AF033961C065A'>
+            <properties context=''>
+              <relation connection='excel-direct.0r55bj613u3f501exy1s91e7qcna' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Sales' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
