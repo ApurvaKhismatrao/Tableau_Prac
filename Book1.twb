@@ -1,0 +1,1295 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='074e974a30efd76ee2475f337ef50c9eb3f53e547413c950cb477b0fe10ef2a4' _.fcp.WorkbookFingerprinting.true...creator-author-id='074e974a30efd76ee2475f337ef50c9eb3f53e547413c950cb477b0fe10ef2a4' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='f1972a1f3fbe7a9a27548f667e3316c98c32cebe758e34390bd60704537660f6' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='f1972a1f3fbe7a9a27548f667e3316c98c32cebe758e34390bd60704537660f6' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='T3ass1(extractfile) Extract' inline='true' name='federated.091ks5q17wj4en14ouocc18m6xyr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='T3ass1(extractfile)' name='hyper.11a5t1y0bwbcjs1g2r7500pzue9y'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/ATHARVA/Tableau_Prac/T3ass1(extractfile).hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.11a5t1y0bwbcjs1g2r7500pzue9y' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>months_as_customer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[months_as_customer]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>months_as_customer</remote-alias>
+            <ordinal>0</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>391</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>1</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>46</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[policy_number]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>policy_number</remote-alias>
+            <ordinal>2</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1000</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_bind_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[policy_bind_date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>policy_bind_date</remote-alias>
+            <ordinal>3</ordinal>
+            <family>insurance</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>951</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[policy_state]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>policy_state</remote-alias>
+            <ordinal>4</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_csl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[policy_csl]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>policy_csl</remote-alias>
+            <ordinal>5</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_deductable</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[policy_deductable]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>policy_deductable</remote-alias>
+            <ordinal>6</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_annual_premium</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[policy_annual_premium]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>policy_annual_premium</remote-alias>
+            <ordinal>7</ordinal>
+            <family>insurance</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>991</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umbrella_limit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[umbrella_limit]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>umbrella_limit</remote-alias>
+            <ordinal>8</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>11</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insured_zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[insured_zip]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>insured_zip</remote-alias>
+            <ordinal>9</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>995</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insured_sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[insured_sex]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>insured_sex</remote-alias>
+            <ordinal>10</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insured_education_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[insured_education_level]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>insured_education_level</remote-alias>
+            <ordinal>11</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>7</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insured_occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[insured_occupation]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>insured_occupation</remote-alias>
+            <ordinal>12</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>14</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insured_hobbies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[insured_hobbies]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>insured_hobbies</remote-alias>
+            <ordinal>13</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>20</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insured_relationship</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[insured_relationship]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>insured_relationship</remote-alias>
+            <ordinal>14</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capital-gains</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[capital-gains]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>capital-gains</remote-alias>
+            <ordinal>15</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>338</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capital-loss</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[capital-loss]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>capital-loss</remote-alias>
+            <ordinal>16</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>354</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[incident_date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>incident_date</remote-alias>
+            <ordinal>17</ordinal>
+            <family>insurance</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>60</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incident_type]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>incident_type</remote-alias>
+            <ordinal>18</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>collision_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[collision_type]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>collision_type</remote-alias>
+            <ordinal>19</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incident_severity]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>incident_severity</remote-alias>
+            <ordinal>20</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>authorities_contacted</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[authorities_contacted]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>authorities_contacted</remote-alias>
+            <ordinal>21</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>5</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incident_state]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>incident_state</remote-alias>
+            <ordinal>22</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>7</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incident_city]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>incident_city</remote-alias>
+            <ordinal>23</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>7</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incident_location]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>incident_location</remote-alias>
+            <ordinal>24</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1000</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_hour_of_the_day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[incident_hour_of_the_day]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>incident_hour_of_the_day</remote-alias>
+            <ordinal>25</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>24</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_vehicles_involved</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_vehicles_involved]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>number_of_vehicles_involved</remote-alias>
+            <ordinal>26</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>property_damage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[property_damage]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>property_damage</remote-alias>
+            <ordinal>27</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bodily_injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bodily_injuries]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>bodily_injuries</remote-alias>
+            <ordinal>28</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>witnesses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[witnesses]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>witnesses</remote-alias>
+            <ordinal>29</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>police_report_available</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[police_report_available]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>police_report_available</remote-alias>
+            <ordinal>30</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_claim_amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_claim_amount]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>total_claim_amount</remote-alias>
+            <ordinal>31</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>763</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>injury_claim</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[injury_claim]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>injury_claim</remote-alias>
+            <ordinal>32</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>638</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>property_claim</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[property_claim]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>property_claim</remote-alias>
+            <ordinal>33</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>626</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vehicle_claim</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vehicle_claim]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>vehicle_claim</remote-alias>
+            <ordinal>34</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>726</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>auto_make</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[auto_make]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>auto_make</remote-alias>
+            <ordinal>35</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>14</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>auto_model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[auto_model]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>auto_model</remote-alias>
+            <ordinal>36</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>39</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>auto_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[auto_year]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>auto_year</remote-alias>
+            <ordinal>37</ordinal>
+            <family>insurance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>21</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_reported</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fraud_reported]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>fraud_reported</remote-alias>
+            <ordinal>38</ordinal>
+            <family>insurance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Authorities Contacted' datatype='string' name='[authorities_contacted]' role='dimension' type='nominal' />
+      <column caption='Auto Make' datatype='string' name='[auto_make]' role='dimension' type='nominal' />
+      <column caption='Auto Model' datatype='string' name='[auto_model]' role='dimension' type='nominal' />
+      <column caption='Auto Year' datatype='integer' name='[auto_year]' role='dimension' type='quantitative' />
+      <column caption='Bodily Injuries' datatype='integer' name='[bodily_injuries]' role='measure' type='quantitative' />
+      <column caption='Capital-Gains' datatype='integer' name='[capital-gains]' role='measure' type='quantitative' />
+      <column caption='Capital-Loss' datatype='integer' name='[capital-loss]' role='measure' type='quantitative' />
+      <column caption='Collision Type' datatype='string' name='[collision_type]' role='dimension' type='nominal' />
+      <column caption='Fraud Reported' datatype='string' name='[fraud_reported]' role='dimension' type='nominal' />
+      <column caption='Incident City' datatype='string' name='[incident_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Incident Date' datatype='date' name='[incident_date]' role='dimension' type='ordinal' />
+      <column caption='Incident Hour Of The Day' datatype='integer' name='[incident_hour_of_the_day]' role='dimension' type='quantitative' />
+      <column caption='Incident Location' datatype='string' name='[incident_location]' role='dimension' type='nominal' />
+      <column caption='Incident Severity' datatype='string' name='[incident_severity]' role='dimension' type='nominal' />
+      <column caption='Incident State' datatype='string' name='[incident_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Incident Type' datatype='string' name='[incident_type]' role='dimension' type='nominal' />
+      <column caption='Injury Claim' datatype='integer' name='[injury_claim]' role='measure' type='quantitative' />
+      <column caption='Insured Education Level' datatype='string' name='[insured_education_level]' role='dimension' type='nominal' />
+      <column caption='Insured Hobbies' datatype='string' name='[insured_hobbies]' role='dimension' type='nominal' />
+      <column caption='Insured Occupation' datatype='string' name='[insured_occupation]' role='dimension' type='nominal' />
+      <column caption='Insured Relationship' datatype='string' name='[insured_relationship]' role='dimension' type='nominal' />
+      <column caption='Insured Sex' datatype='string' name='[insured_sex]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Insured Zip' datatype='integer' default-format='*00000' name='[insured_zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Months As Customer' datatype='integer' name='[months_as_customer]' role='measure' type='quantitative' />
+      <column caption='Number Of Vehicles Involved' datatype='integer' name='[number_of_vehicles_involved]' role='measure' type='quantitative' />
+      <column caption='Police Report Available' datatype='string' name='[police_report_available]' role='dimension' type='nominal' />
+      <column caption='Policy Annual Premium' datatype='real' name='[policy_annual_premium]' role='measure' type='quantitative' />
+      <column caption='Policy Bind Date' datatype='date' name='[policy_bind_date]' role='dimension' type='ordinal' />
+      <column caption='Policy Csl' datatype='string' name='[policy_csl]' role='dimension' type='nominal' />
+      <column caption='Policy Deductable' datatype='integer' name='[policy_deductable]' role='measure' type='quantitative' />
+      <column caption='Policy Number' datatype='integer' name='[policy_number]' role='dimension' type='ordinal' />
+      <column caption='Policy State' datatype='string' name='[policy_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Property Claim' datatype='integer' name='[property_claim]' role='measure' type='quantitative' />
+      <column caption='Property Damage' datatype='string' name='[property_damage]' role='dimension' type='nominal' />
+      <column caption='Total Claim Amount' datatype='integer' name='[total_claim_amount]' role='measure' type='quantitative' />
+      <column caption='Umbrella Limit' datatype='integer' name='[umbrella_limit]' role='measure' type='quantitative' />
+      <column caption='Vehicle Claim' datatype='integer' name='[vehicle_claim]' role='measure' type='quantitative' />
+      <column caption='Witnesses' datatype='integer' name='[witnesses]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/ATHARVA/Tableau_Prac/T3ass1(extractfile) Extract.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/05/2026 02:49:26 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='T3ass1(extractfile) Extract' increment-value='%null%' refresh-type='create' rows-inserted='1000' timestamp-start='2026-10-05 14:49:26.442' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>months_as_customer</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[months_as_customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>months_as_customer</remote-alias>
+              <ordinal>0</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>391</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>1</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>policy_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[policy_number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>policy_number</remote-alias>
+              <ordinal>2</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>policy_bind_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[policy_bind_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>policy_bind_date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>insurance</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>951</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>policy_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[policy_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>policy_state</remote-alias>
+              <ordinal>4</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>policy_csl</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[policy_csl]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>policy_csl</remote-alias>
+              <ordinal>5</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>policy_deductable</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[policy_deductable]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>policy_deductable</remote-alias>
+              <ordinal>6</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>policy_annual_premium</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[policy_annual_premium]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>policy_annual_premium</remote-alias>
+              <ordinal>7</ordinal>
+              <family>insurance</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>991</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>umbrella_limit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[umbrella_limit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>umbrella_limit</remote-alias>
+              <ordinal>8</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>insured_zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[insured_zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>insured_zip</remote-alias>
+              <ordinal>9</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>995</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>insured_sex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[insured_sex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>insured_sex</remote-alias>
+              <ordinal>10</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>insured_education_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[insured_education_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>insured_education_level</remote-alias>
+              <ordinal>11</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>insured_occupation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[insured_occupation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>insured_occupation</remote-alias>
+              <ordinal>12</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>insured_hobbies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[insured_hobbies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>insured_hobbies</remote-alias>
+              <ordinal>13</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>insured_relationship</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[insured_relationship]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>insured_relationship</remote-alias>
+              <ordinal>14</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>capital-gains</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[capital-gains]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>capital-gains</remote-alias>
+              <ordinal>15</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>338</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>capital-loss</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[capital-loss]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>capital-loss</remote-alias>
+              <ordinal>16</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>354</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>incident_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[incident_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>incident_date</remote-alias>
+              <ordinal>17</ordinal>
+              <family>insurance</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>incident_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[incident_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>incident_type</remote-alias>
+              <ordinal>18</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>collision_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[collision_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>collision_type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>incident_severity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[incident_severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>incident_severity</remote-alias>
+              <ordinal>20</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>authorities_contacted</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[authorities_contacted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>authorities_contacted</remote-alias>
+              <ordinal>21</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>incident_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[incident_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>incident_state</remote-alias>
+              <ordinal>22</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>incident_city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[incident_city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>incident_city</remote-alias>
+              <ordinal>23</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>incident_location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[incident_location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>incident_location</remote-alias>
+              <ordinal>24</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>incident_hour_of_the_day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[incident_hour_of_the_day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>incident_hour_of_the_day</remote-alias>
+              <ordinal>25</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_vehicles_involved</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_vehicles_involved]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_vehicles_involved</remote-alias>
+              <ordinal>26</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>property_damage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[property_damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>property_damage</remote-alias>
+              <ordinal>27</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bodily_injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bodily_injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bodily_injuries</remote-alias>
+              <ordinal>28</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>witnesses</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[witnesses]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>witnesses</remote-alias>
+              <ordinal>29</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>police_report_available</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[police_report_available]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>police_report_available</remote-alias>
+              <ordinal>30</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_claim_amount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_claim_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_claim_amount</remote-alias>
+              <ordinal>31</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>763</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>injury_claim</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[injury_claim]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>injury_claim</remote-alias>
+              <ordinal>32</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>638</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>property_claim</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[property_claim]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>property_claim</remote-alias>
+              <ordinal>33</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>626</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vehicle_claim</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[vehicle_claim]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vehicle_claim</remote-alias>
+              <ordinal>34</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>726</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>auto_make</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[auto_make]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>auto_make</remote-alias>
+              <ordinal>35</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>auto_model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[auto_model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>auto_model</remote-alias>
+              <ordinal>36</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>auto_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[auto_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>auto_year</remote-alias>
+              <ordinal>37</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fraud_reported</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fraud_reported]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fraud_reported</remote-alias>
+              <ordinal>38</ordinal>
+              <family>insurance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_EBB5CAB42FAA4CD28942290F31A5D6C1'>
+            <properties context=''>
+              <relation connection='hyper.11a5t1y0bwbcjs1g2r7500pzue9y' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{55C1FE24-C45C-40D5-8023-BD09C9D56937}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66AC1463-9CCE-4C7C-9E92-59B02847D1C0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
